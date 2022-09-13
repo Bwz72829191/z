@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="refresh" content="5; url=https://www.google.com/"> -->
+    <title>404</title>
+</head>
+<body>
+	<center>
+    <h2>404</h2>
+    <h2>Что-то пошло не так! <br> Похоже данной странице не существует <br> вы будете автоматически перенаправлены на главную страницу через 10 секунд<h2>
+    </center>
+    <h1 style="text-align: center">wait</h1>
+    <script>
+    	let counter = document.querySelector('h1');
+let count = 1;
+
+setInterval(()=>{
+
+    counter.innerText = count;
+    count++
+    
+    if(count > 10) location.replace('http://db-search.tk/')
+    
+},1000)
+</script>
+</body>
+</html>
